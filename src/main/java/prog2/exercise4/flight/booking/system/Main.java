@@ -1,6 +1,7 @@
-package exercise4.flight.booking.system;
-import java.time.LocalDate;
+package prog2.exercise4.flight.booking.system;
 
+import java.time.LocalDate;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) 
@@ -25,14 +26,24 @@ public class Main {
         fb.setTotalPassengers(1,3);
         int result = fb.getTotalPassengers();
 
-//         fb.setPassengerFullName("John Doe");
-//         fb.setTicketNumber("MU759435");
-//         fb.setTripSource("NANJING") ;
-//         fb.setTripDestination("OULU");
-//         fb.setFlightCompany("Flights-of-Fancy");
-//         fb.setDepartingDate(LocalDate.parse("2023-03-12"));
-//         fb.setReturnDate(LocalDate.parse("2023-03-14"));
-//         fb.setTotalTicketPrice(5500);
+        //练习四 添加区 
+        System.out.println("Please select the type of ride you want : ");
+        Scanner sc = new Scanner(System.in);
+        int engineRoom = sc.nextInt();
+        
+
+        //练习四 添加区
+
+
+
+        // fb.setPassengerFullName("John Doe");
+        // fb.setTicketNumber("MU759435");
+        // fb.setTripSource("NANJING") ;
+        // fb.setTripDestination("OULU");
+        // fb.setFlightCompany("Flights-of-Fancy");
+        // fb.setDepartingDate(LocalDate.parse("2023-03-12"));
+        // fb.setReturnDate(LocalDate.parse("2023-03-14"));
+        // fb.setTotalTicketPrice(5500);
 
 
         System.out.println("Dear " + fb.getPassengerFullName() + ".Thank you for booking your flight with ."
