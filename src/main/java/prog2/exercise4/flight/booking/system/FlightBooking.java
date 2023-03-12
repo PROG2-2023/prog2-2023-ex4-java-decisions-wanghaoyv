@@ -6,7 +6,6 @@ import java.security.PublicKey;
 import java.util.Random;
 import java.util.Scanner;
 
-
 import javax.security.auth.callback.ConfirmationCallback;
 import javax.sound.sampled.SourceDataLine;
 
@@ -544,4 +543,3 @@ public class FlightBooking {
     // }
 
 }
-
