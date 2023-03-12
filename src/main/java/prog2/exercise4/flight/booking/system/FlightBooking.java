@@ -6,6 +6,9 @@ import java.security.PublicKey;
 import java.util.Random;
 import java.util.Scanner;
 
+import javax.security.auth.callback.ConfirmationCallback;
+import javax.sound.sampled.SourceDataLine;
+
 public class FlightBooking {
     public String flightCompany;
     public String flightID;
@@ -167,7 +170,7 @@ public class FlightBooking {
     public enum BookingClass {
         FIRST, BUSINESS, ECONOMY;
     }
-    
+
     private BookingClass booking;
 
     public void setBookingClass(String bookingClass)
@@ -505,6 +508,26 @@ public class FlightBooking {
     }
 
     //task 9
+    public enum ConfirmationMessage{
+        CHANGE,NOTCHANGE;
+    }
+    private ConfirmationMessage ConfirmationMessage;
+    public void setConfirmationMessage(String confirmationMessage){
+    switch(confirmationMessage){
+        case"1":
+        this.ConfirmationMessage = ConfirmationMessage.CHANGE;
+        System.out.println("Thank you for booking your flight with "+flightCompany+". Following are the details \n of your booking and the trip: \n"+
+        "Ticket Number:"+ticketNumber+"\nPassenger Name:"+passengerFullName+"\nFrom TripSource to"+tripDestination+"\nDate of departure:"+
+        departureDate+"\nDate  of  return: returningDate (Changed from old returningDate to new\n" +returnDate+"\nIMPORTANT NOTICE: As per our policy,"+
+        " the return date was changed because it was \nless than two days apart from your departure date.");
+        break;
+    }
+
+
+
+    }
+
+
     
                             // 练习四 添加区
 
@@ -520,3 +543,4 @@ public class FlightBooking {
     // }
 
 }
+
