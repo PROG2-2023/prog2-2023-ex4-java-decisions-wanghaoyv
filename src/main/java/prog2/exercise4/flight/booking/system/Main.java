@@ -25,14 +25,14 @@ public class Main {
         fb.setTotalPassengers(1,3);
         int result = fb.getTotalPassengers();
 
-        fb.setPassengerFullName("John Doe");
-        fb.setTicketNumber("MU759435");
-        fb.setTripSource("NANJING") ;
-        fb.setTripDestination("OULU");
-        fb.setFlightCompany("Flights-of-Fancy");
-        fb.setDepartingDate(LocalDate.parse("2023-03-12"));
-        fb.setReturnDate(LocalDate.parse("2023-03-14"));
-        fb.setTotalTicketPrice(5500);
+//         fb.setPassengerFullName("John Doe");
+//         fb.setTicketNumber("MU759435");
+//         fb.setTripSource("NANJING") ;
+//         fb.setTripDestination("OULU");
+//         fb.setFlightCompany("Flights-of-Fancy");
+//         fb.setDepartingDate(LocalDate.parse("2023-03-12"));
+//         fb.setReturnDate(LocalDate.parse("2023-03-14"));
+//         fb.setTotalTicketPrice(5500);
 
 
         System.out.println("Dear " + fb.getPassengerFullName() + ".Thank you for booking your flight with ."
